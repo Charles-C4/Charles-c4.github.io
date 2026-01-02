@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chukwuleta Chigaemezu Charles | Cloud & DevOps Engineer</title>
+    <meta name="description" content="Portfolio of Charles Chukwuleta - Cloud & DevOps Engineer, SRE, and Entrepreneur.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            accent: '#38bdf8', // Light Blue
+                            secondary: '#64748b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s step-start infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-300 font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-white/10 bg-brand-dark/90 backdrop-blur">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-bold whitespace-nowrap text-white font-mono">&lt;Charles/&gt;</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                    <li><a href="#about" class="block py-2 px-3 text-white rounded hover:text-brand-accent md:p-0">About</a></li>
+                    <li><a href="#skills" class="block py-2 px-3 text-white rounded hover:text-brand-accent md:p-0">Skills</a></li>
+                    <li><a href="#projects" class="block py-2 px-3 text-white rounded hover:text-brand-accent md:p-0">Projects</a></li>
+                    <li><a href="#experience" class="block py-2 px-3 text-white rounded hover:text-brand-accent md:p-0">Experience</a></li>
+                    <li><a href="#contact" class="block py-2 px-3 text-brand-accent border border-brand-accent rounded hover:bg-brand-accent hover:text-brand-dark md:px-4 md:py-1 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto px-4 text-center z-10">
+            <p class="text-brand-accent font-mono mb-4">Hello, World! I am</p>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+                Chukwuleta C. Charles
+            </h1>
+            <div class="text-xl md:text-2xl text-slate-400 font-mono mb-8 h-8">
+                I build <span id="typing-text" class="text-white typing-cursor"></span>
+            </div>
+            <p class="max-w-2xl mx-auto text-slate-400 mb-10 leading-relaxed">
+                A Cloud & DevOps Engineer bridging the gap between infrastructure and entrepreneurship. 
+                Specializing in AWS, Automation, and scalable architectures.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-3 bg-brand-accent text-brand-dark font-bold rounded hover:bg-white transition-colors">
+                    View My Work
+                </a>
+                <a href="https://www.linkedin.com/in/charles-chukwuleta" target="_blank" class="px-8 py-3 border border-slate-600 text-white rounded hover:border-brand-accent hover:text-brand-accent transition-colors">
+                    <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                </a>
+                <a href="https://github.com/charles-c4/" target="_blank" class="px-8 py-3 border border-slate-600 text-white rounded hover:border-brand-accent hover:text-brand-accent transition-colors">
+                    <i class="fab fa-github mr-2"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <span class="text-brand-accent mr-2">01.</span> About Me
+                <span class="h-px bg-slate-700 flex-grow ml-4"></span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="md:col-span-2 text-slate-300 leading-relaxed space-y-4">
+                    <p>
+                        I am a passionate <strong>Cloud and DevOps Engineer</strong> currently honing my craft at <strong>AltSchool Africa</strong> and studying Computer Science at <strong>Lagos State University</strong>.
+                    </p>
+                    <p>
+                        My journey involves building solid foundations in infrastructure automation, CI/CD pipelines, and container orchestration across AWS, Azure, and GCP. I combine my technical background with an <strong>entrepreneurial mindset</strong>, driven to create scalable solutions that solve real-world problems.
+                    </p>
+                    <p>
+                        Currently, I am working on <strong>BetProtector</strong>, a tool designed to help individuals manage financial impulses, while preparing for my AWS and GCP certification exams.
+                    </p>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="relative glass-card p-6 rounded-lg">
+                        <h3 class="text-white font-bold mb-4 font-mono">Current Focus</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-center"><i class="fas fa-chevron-right text-brand-accent text-xs mr-2"></i> Infrastructure as Code (Terraform)</li>
+                            <li class="flex items-center"><i class="fas fa-chevron-right text-brand-accent text-xs mr-2"></i> Kubernetes Orchestration</li>
+                            <li class="flex items-center"><i class="fas fa-chevron-right text-brand-accent text-xs mr-2"></i> Startup Development</li>
+                            <li class="flex items-center"><i class="fas fa-chevron-right text-brand-accent text-xs mr-2"></i> AWS Solutions Architecture</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <span class="text-brand-accent mr-2">02.</span> Technical Skills
+                <span class="h-px bg-slate-700 flex-grow ml-4"></span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="glass-card p-6 rounded-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-brand-accent text-3xl mb-4"><i class="fab fa-aws"></i></div>
+                    <h3 class="text-white font-bold mb-2">Cloud Platforms</h3>
+                    <p class="text-sm text-slate-400">AWS, GCP, Azure, DigitalOcean</p>
+                </div>
+                
+                <div class="glass-card p-6 rounded-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-brand-accent text-3xl mb-4"><i class="fas fa-server"></i></div>
+                    <h3 class="text-white font-bold mb-2">Infra & DevOps</h3>
+                    <p class="text-sm text-slate-400">Terraform, Ansible, Docker, Kubernetes, Linux OS</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-brand-accent text-3xl mb-4"><i class="fas fa-code-branch"></i></div>
+                    <h3 class="text-white font-bold mb-2">CI/CD & Tools</h3>
+                    <p class="text-sm text-slate-400">Jenkins, GitHub Actions, Git, UFW</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-brand-accent text-3xl mb-4"><i class="fab fa-python"></i></div>
+                    <h3 class="text-white font-bold mb-2">Languages</h3>
+                    <p class="text-sm text-slate-400">Python, Node.js, JavaScript, Bash Scripting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <span class="text-brand-accent mr-2">03.</span> Featured Projects
+                <span class="h-px bg-slate-700 flex-grow ml-4"></span>
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="glass-card rounded-xl overflow-hidden flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="far fa-folder text-4xl text-brand-accent"></i>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-slate-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">3-Tier Architecture on AWS</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Designed a high-availability infrastructure using VPC, Public/Private subnets, NAT Gateways, and ALBs. Deployed EC2 web servers and RDS PostgreSQL databases in private subnets for security.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <ul class="flex flex-wrap gap-2 text-xs font-mono text-brand-accent">
+                            <li>AWS VPC</li>
+                            <li>EC2</li>
+                            <li>PostgreSQL</li>
+                            <li>ALB</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-xl overflow-hidden flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="far fa-folder text-4xl text-brand-accent"></i>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-slate-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Static Website with CI/CD</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Automated the deployment of a static website. Used Terraform for IaC, Ansible for configuration, and Docker for containerization. Orchestrated via Kubernetes with a full CI/CD pipeline.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <ul class="flex flex-wrap gap-2 text-xs font-mono text-brand-accent">
+                            <li>Terraform</li>
+                            <li>Jenkins</li>
+                            <li>Docker</li>
+                            <li>K8s</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-xl overflow-hidden flex flex-col border-brand-accent/30 border">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fas fa-rocket text-4xl text-brand-accent"></i>
+                            <div class="flex space-x-4">
+                                <span class="text-xs bg-brand-accent text-brand-dark px-2 py-1 rounded font-bold">STARTUP</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">BetProtector</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            An entrepreneurial venture combining tech with social impact. A tool designed to help people with gambling addiction gain control over their financial impulses.
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <ul class="flex flex-wrap gap-2 text-xs font-mono text-brand-accent">
+                            <li>Product Mgmt</li>
+                            <li>FinTech</li>
+                            <li>SaaS</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <span class="text-brand-accent mr-2">04.</span> Experience
+                <span class="h-px bg-slate-700 flex-grow ml-4"></span>
+            </h2>
+
+            <div class="relative border-l border-slate-700 ml-4 md:ml-10">
+                
+                <div class="mb-10 ml-6">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-brand-accent rounded-full -left-3 ring-8 ring-slate-900">
+                        <i class="fas fa-cloud text-brand-dark text-xs"></i>
+                    </span>
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-white">Cloud Engineering Intern <span class="bg-blue-900 text-blue-300 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">AltSchool Africa</span></h3>
+                    <time class="block mb-2 text-sm font-normal text-slate-400">Aug 2025 - Present | Remote</time>
+                    <p class="mb-4 text-base font-normal text-slate-400">
+                        Focused on building scalable, secure, and efficient cloud solutions using AWS, GCP, Terraform, and Ansible.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-slate-400 space-y-1">
+                        <li>Implemented version control with Git and automated builds using GitHub Actions.</li>
+                        <li>Designed and deployed static websites using Terraform and Docker.</li>
+                        <li>Strengthened Linux administration and networking skills.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-10 ml-6">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-slate-700 rounded-full -left-3 ring-8 ring-slate-900">
+                        <i class="fas fa-laptop-code text-slate-300 text-xs"></i>
+                    </span>
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-white">Software Engineer <span class="bg-slate-700 text-slate-300 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">TNR Investment Ltd</span></h3>
+                    <time class="block mb-2 text-sm font-normal text-slate-400">Jan 2021 - Dec 2022 | Lagos, NG</time>
+                    <ul class="list-disc list-inside text-sm text-slate-400 space-y-1">
+                        <li>Managed website operations ensuring 99% uptime.</li>
+                        <li>Analyzed traffic and optimized SEO strategies.</li>
+                        <li>Implemented robust security updates and managed data backups.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-brand-dark py-12 text-center border-t border-white/5">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-white mb-6">Let's Build Something Together</h2>
+            <p class="text-slate-400 mb-8 max-w-lg mx-auto">
+                Whether you have a question about Cloud infrastructure, want to discuss my startup BetProtector, or just want to say hi, my inbox is always open.
+            </p>
+            <a href="mailto:hustlecrib.ng@gmail.com" class="inline-block px-8 py-3 border border-brand-accent text-brand-accent rounded hover:bg-brand-accent/10 transition-colors mb-12">
+                Say Hello
+            </a>
+            
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://twitter.com/charleschu4891" class="text-slate-400 hover:text-brand-accent text-xl"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/charles-c4/" class="text-slate-400 hover:text-brand-accent text-xl"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/charles-chukwuleta" class="text-slate-400 hover:text-brand-accent text-xl"><i class="fab fa-linkedin"></i></a>
+            </div>
+            
+            <p class="text-slate-600 text-sm font-mono">
+                Designed & Built by Charles Chukwuleta <br>
+                &copy; 2026
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const textElement = document.getElementById('typing-text');
+        const phrases = ['Cloud Solutions.', 'DevOps Pipelines.', 'Scalable Infrastructure.', 'Startups.'];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typeSpeed = 100;
+
+        function type() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+                typeSpeed = 50;
+            } else {
+                textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+                typeSpeed = 100;
+            }
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isDeleting = true;
+                typeSpeed = 2000; // Pause at end
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+
+        document.addEventListener('DOMContentLoaded', type);
+    </script>
+</body>
+</html>
